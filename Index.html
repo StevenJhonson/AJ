@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ.com</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .row {
+        background-image: url(images/banner1.png);
+        height: 90vh;
+
+    }
+
+    .col1 {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 30px 0;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    ul li {
+        margin-left: 30px;
+        color: white;
+        transition: 0.7s;
+    }
+
+    .col2 {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .body1 {
+        margin-top: 120px;
+    }
+
+    .body1 h1 {
+        font-size: 75px;
+        margin-bottom: 20px;
+    }
+
+    .body1 h3 {
+        font-size: 25px;
+        font-weight: normal;
+    }
+
+    .body1 span {
+        font-size: 25px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .body1 button {
+        padding: 18px 50px;
+        border: none;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        border-radius: 30px;
+        margin-top: 40px;
+        transition: 0.7s;
+    }
+
+    .body1 button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    ul li:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+
+
+
+    .container .body {
+        width: 80%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        margin-top: 150px;
+    }
+
+    .dot {
+        background-color: rgb(248, 199, 39);
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        margin: 0 10px;
+    }
+
+    .line {
+        display: flex;
+        align-items: center;
+        margin-left: 400px;
+    }
+
+    .head {
+        text-align: center;
+    }
+
+    .first {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 100px 0;
+    }
+
+    .left1 {
+        width: 55%;
+        transition: 1s;
+    }
+
+    .left1 p {
+        font-size: large;
+    }
+
+    .left1 button {
+        background-color: black;
+        color: white;
+        padding: 18px 45px;
+        border: solid rgb(248, 199, 39) 3px;
+        border-radius: 28px;
+        font-size: larger;
+        margin-left: 400px;
+    }
+
+    .right1 {
+        border: solid rgb(248, 199, 39) 25px;
+        border-radius: 50%;
+        background-color: rgb(248, 199, 39);
+    }
+
+    .second {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 100px 0;
+    }
+
+    .left2 p {
+        font-size: large;
+    }
+
+    .left2 {
+        width: 55%;
+        transition: 1s;
+    }
+
+    .right2 {
+        background-color: rgb(248, 199, 39);
+        border: solid rgb(248, 199, 39) 25px;
+        border-radius: 50%;
+
+    }
+
+    .left2 button {
+        background-color: black;
+        color: white;
+        padding: 18px 45px;
+        border: solid rgb(248, 199, 39) 3px;
+        border-radius: 28px;
+        font-size: larger;
+    }
+
+
+    .third {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 100px 0;
+    }
+
+    .left3 {
+        width: 55%;
+        transition: 1s;
+    }
+
+    .left3 p {
+        font-size: large;
+    }
+
+    .left3 button {
+        background-color: black;
+        color: white;
+        padding: 18px 45px;
+        border: solid rgb(248, 199, 39) 3px;
+        border-radius: 28px;
+        font-size: larger;
+        margin-left: 400px;
+    }
+
+    .right3 {
+        border: solid rgb(248, 199, 39) 25px;
+        border-radius: 50%;
+        background-color: rgb(248, 199, 39);
+    }
+
+
+
+
+
+
+    .box {
+        width: 80%;
+        margin: 0 auto;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+
+    .boxes {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .table {
+        border: solid rgb(248, 199, 39) 7px;
+        border-radius: 20px;
+        width: 420px;
+        height: 420px;
+    }
+
+    hr {
+        width: 350px;
+        margin-left: 30px;
+        border: solid black 1px;
+    }
+
+    .table h2 {
+        margin-left: 30px;
+        color: rgb(85, 84, 84);
+        font-weight: normal;
+        margin-top: 40px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .table button {
+        background-color: black;
+        color: white;
+        padding: 14px 50px;
+        font-size: large;
+        border-radius: 25px;
+        border: none;
+        margin-top: 30px;
+        margin-left: 140px;
+    }
+
+
+    .our {
+        width: 80%;
+        margin: 0 auto;
+        font-family: sans-serif;
+        margin-top: 70px;
+    }
+    .our-clients {
+        text-align: center;
+        font-size: large;
+        margin-bottom: 50px;
+    }
+    .jeo-elik {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .tarif p {
+        background-color: black;
+        color: white;
+        padding: 30px 60px;
+        width: 540px;
+        text-align: start;
+        font-size: large;
+    }
+    span {
+        color: rgb(248, 199, 39);
+        font-size: larger;
+        font-weight: bold;
+        margin-left: 25px;
+    }
+    .q {
+        margin-right: 20px;
+    }
+
+
+
+    .footer {
+        margin-top: 80px;
+    }
+
+    .f-img {
+        background-image: url(images/banner2.png);
+    }
+    .footer1 {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .footer2 {
+        background-image: url(images/cop.jpg);
+        padding: 20px 0;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .f-left h1:nth-child(1) {
+        color: white;
+    }
+    .f-right h1:nth-child(2) {
+        color: white;
+    } 
+    .left1 button:hover {
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+    }  
+    .left2 button:hover {
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+    }  
+    .left3 button:hover {
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+
+    }  
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="col1">
+
+                    <div class="header">
+                        <img src="images/logo.png" alt="">
+                    </div>
+
+                    <ul>
+                        <li>HOME</li>
+                        <li>JEWELLERY</li>
+                        <li>CONTACT</li>
+                        <li>OUR CLIENTS</li>
+                    </ul>
+                </div>
+                <div class="col2">
+
+                    <div class="body1">
+                        <h1>Jewellery</h1>
+                        <h3>Free Multipurpose Responsive <br> <span>Landing Page 2019</span> </h3>
+                        <button>Contact Us</button>
+                    </div>
+
+                    <div class="body2">
+                        <img src="images/img.png" width="500px" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="body">
+
+            <div class="head">
+                <div class="line">
+                    <div class="dot"></div>
+                    <h1>Best Jewellery</h1>
+                    <div class="dot"></div>
+                </div>
+                <br> <br>
+                <p>A reader will be distracted by the readable content of a page when looking at its layout. The point
+                    of using Lorem it is a long established fact that a reader will be distracted by the readable content
+                    of a page when looking at its layout. The point of using Lorem</p>
+            </div>
+
+            <div class="first">
+                <div class="left1">
+                    <p>a reader will be distracted by the readable content of a page when looking at its layout. The
+                        point
+                        of using Lorem it is a long established fact that a reader will be distracted by the readable
+                        content
+                        of a page when looking at its layout. The point of using Lorem</p>
+                    <button>see more</button>
+                </div>
+                <div class="right1">
+                    <img src="images/beimg.png" alt="">
+                </div>
+            </div>
+
+            <div class="second">
+
+                <div class="right2">
+                    <img src="images/beimg2.png" alt="">
+                </div>
+
+                <div class="left2">
+                    <p>a reader will be distracted by the readable content of a page when looking at its layout. The
+                        point
+                        of using LoremIt is a long established fact that a reader will be distracted by the readable
+                        content
+                        of a page when looking at its layout. The point of using Lorem</p>
+                    <button>see more</button>
+                </div>
+
+            </div>
+
+            <div class="third">
+
+                <div class="left3">
+                    <p>a reader will be distracted by the readable content of a page when looking at its layout. The
+                        point
+                        of using LoremIt is a long established fact that a reader will be distracted by the readable
+                        content
+                        of a page when looking at its layout. The point of using Lorem</p>
+                    <button>see more</button>
+                </div>
+
+                <div class="right3">
+                    <img src="images/beimg3.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <div class="text">
+
+                <h1>Request a call back</h1>
+                <br>
+                <p>A reader will be distracted by the readable content of a page when looking at its layout. The point
+                    of using LoremIt is a long established fact that a reader will be distracted by the readable content
+                </p>
+
+            </div>
+
+            <div class="boxes">
+
+                <div class="table">
+                    <h2>Name</h2>
+                    <hr>
+                    <h2>Phone Number</h2>
+                    <hr>
+                    <h2>Email</h2>
+                    <hr>
+                    <br>
+                    <h2>Message</h2>
+                    <hr>
+                    <button>Send</button>
+                </div>
+
+                <div class="img">
+                    <img src="images/cac.png" width="580px" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="our">
+
+            <div class="our-clients">
+                <h1>Our Clients</h1>
+                <br>
+                <p>A reader will be distracted by the readable content of a page when looking at its layout. The point
+                    of using LoremIt is a</p>
+            </div>
+
+            <div class="jeo-elik">
+
+                <div class="q"><img src="images/icon_1.png" alt=""></div>
+                <div class="rasm"><img src="images/clients.png" alt=""></div>
+                <div class="tarif">
+                    <span>Joe elik</span>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters, as</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="f-img">
+                <div class="footer1">
+                    <div class="f-left">
+                        <h1>Free Multipurpose Responsive</h1>
+                        <br>
+                        <h1>Landing Page 2019</h1>
+                    </div>
+                    <div class="f-right">
+                        <h1>Call Now</h1>
+                        <br>
+                        <h1>(+1)1234567890</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <p>&copy;2019 All Rights Reserved. Free html Templates</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
